@@ -12,10 +12,6 @@ int n, k, power2;
 vector<pos> ps;
 vector<int> ypx, ymx;
 
-int dist(int l, int r) {
-	return abs(ps.at(l).x - ps.at(r).x) + abs(ps.at(l).y - ps.at(r).y);
-}
-
 int dist_p(int l, int r) {
 	return abs((ps.at(ypx.at(l)).y + ps.at(ypx.at(l)).x) - (ps.at(ypx.at(r)).y + ps.at(ypx.at(r)).x));;
 }
